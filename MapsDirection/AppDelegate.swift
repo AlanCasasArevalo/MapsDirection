@@ -14,7 +14,7 @@ import GooglePlaces
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleAPIKey = "YOUR_GOOGLE_API_KEY"
+    let googleAPIKey = Constants.googleApiKey
     
     /*****************************************************************
      * Servicios habilitados en google necesarios para que funcione correctamente: https://console.developers.google.com/  && https://console.cloud.google.com/google

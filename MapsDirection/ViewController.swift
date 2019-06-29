@@ -190,7 +190,7 @@ extension ViewController: GMSMapViewDelegate, CLLocationManagerDelegate {
         let origin = "\(startLocation.coordinate.latitude),\(startLocation.coordinate.longitude)"
         let destination = "\(endLocation.coordinate.latitude),\(endLocation.coordinate.longitude)"
         
-        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyBEQyb0dKvhFDAsKfjlJx1JR989yKvzKcY"
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=\(Constants.googleApiKey)"
         
         Alamofire.request(url).responseJSON { (response) in
             
